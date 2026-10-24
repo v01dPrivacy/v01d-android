@@ -3,8 +3,19 @@
 > **STATUS (implemented)** — Sections 1–6 shipped, 50/50 tests green, verified on emulator.
 > Bonus found & fixed during verification: **first-launch Skip → permanent lockout**
 > (isLocked never cleared when no PIN is set — `MainActivity.onComplete` now calls `LockManager.unlock()`).
-> Still open: About source-URL → real public repo (blocked on repo creation); contextual "?" tips;
-> optional custom domain for the relay; Worker KV capacity (1k writes/day free) before real users.
+> **PUBLIC REPO LIVE: https://github.com/v01dPrivacy/v01d-android** (main + tag v1.1.0).
+> Keystore NOT committed (offline backup required); .gitignore covers build/node_modules/keystore.
+> fastlane metadata rewritten (all current features + new screenshots from emulator: dashboard,
+> wallet, message, tor, aliases, score) + icon.png 512x512 generated. F-Droid yml fixed
+> (SourceCode/Repo = v01dPrivacy/v01d-android, commit v1.1.0, CurrentVersion 1.1.0/8, subdir removed).
+> APK size FIXED: ndkVersion pinned (r27c) → AGP strips libsignal_jni.so 110MB→~9MB per ABI;
+> debug 314MB→120MB. Release build needs user's keystore passwords (env VOID_KEYSTORE_PASSWORD /
+> VOID_KEY_PASSWORD — user declined to share; release command handed off). FLAG_SECURE now release-
+> only (debug screenshots possible). Second lock bug fixed: no-PIN users could boot into permanent
+> LockScreen (onCreate now unlocks when no PIN is set).
+>
+> Still open: GitHub Release with signed APK (needs keystore passwords); F-Droid MR (after release);
+> contextual "?" tips; optional custom domain for relay; KV capacity (1k writes/day) before real users.
 >
 > **Follow-up pass (companion/metadata/settings):** removed SimpleX, Session and InviZible from
 > Companion Apps (InviZible = second VPN → conflicts with the built-in Tor VPN; Android allows one
