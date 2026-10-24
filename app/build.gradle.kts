@@ -9,6 +9,10 @@ android {
     namespace = "com.voidprivacy.app"
     compileSdk = 35
 
+    // Needed so AGP runs objcopy on the (huge, symbol-laden) native libs from
+    // libsignal — without an NDK they ship unstripped (~110 MB per ABI).
+    ndkVersion = "27.2.12479018"
+
     defaultConfig {
         applicationId = "com.voidprivacy.app"
         minSdk = 31
