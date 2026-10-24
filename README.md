@@ -1,5 +1,7 @@
 # v01d — Privacy Toolbox for Android
 
+[![Build APK](https://github.com/v01dPrivacy/v01d-android/actions/workflows/build.yml/badge.svg)](https://github.com/v01dPrivacy/v01d-android/actions/workflows/build.yml)
+
 A free, open-source privacy toolbox designed for GrapheneOS (works on any Android 12+).
 
 ## Features
