@@ -1,0 +1,23 @@
+# Android
+local.properties
+*.iml
+.idea/
+.DS_Store
+.cxx/
+
+# Build outputs
+build/
+app/build/
+captures/
+.kotlin/
+.gradle/
+
+# Signing — NEVER publish the keystore (keep an offline backup!)
+keystore/
+
+# Cloudflare Worker
+worker/node_modules/
+worker/.wrangler/
+
+# Reference repos / scratch (not part of the app)
+repo/

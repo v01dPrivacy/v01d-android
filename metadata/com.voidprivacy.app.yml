@@ -1,0 +1,24 @@
+Categories:
+  - Security
+  - Internet
+License: GPL-3.0-only
+AuthorName: v01d Privacy
+SourceCode: https://github.com/v01dPrivacy/v01d-android
+IssueTracker: https://github.com/v01dPrivacy/v01d-android/issues
+
+AutoName: v01d
+
+RepoType: git
+Repo: https://github.com/v01dPrivacy/v01d-android
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 8
+    commit: v1.1.0
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.1.0
+CurrentVersionCode: 8

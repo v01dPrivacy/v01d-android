@@ -1,0 +1,10 @@
+build/
+.gradle/
+repo/
+keystore/
+*.iml
+.idea/
+.DS_Store
+output/
+fastlane/metadata/android/en-US/images/
+*.png

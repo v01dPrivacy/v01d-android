@@ -1,0 +1,16 @@
+{
+  "name": "void-message-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zero-knowledge blind mailbox relay for Void Message",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.100.0"
+  }
+}

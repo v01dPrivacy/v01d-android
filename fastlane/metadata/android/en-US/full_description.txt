@@ -1,0 +1,29 @@
+v01d is a free, open-source privacy toolbox for Android, designed with GrapheneOS in mind.
+
+<b>Features:</b>
+
+• <b>BTC Wallet</b> — Generate or import offline Bitcoin wallets. BIP-39 seed, native SegWit (bc1q) addresses, QR codes, encrypted storage, balance with euro equivalent, transaction history. Sending with fee presets (slow / normal / fast from live estimates) and BIP-21 QR scanning.
+
+• <b>PSBT Signer</b> — Parse, inspect, and sign BIP-174 PSBTs with your wallet keys. Compatible with Sparrow, Electrum, and BlueWallet.
+
+• <b>XMR Wallet</b> — Offline Monero wallet: create or import a 25-word seed, receive with address + QR. Balance and sending hand off to Monerujo — your seed works there too.
+
+• <b>Secure Message</b> — End-to-end encrypted chat (Signal protocol: PQXDH + Double Ratchet). No accounts, no phone numbers: identity is a QR you exchange in person. Messages travel as opaque blobs through a blind relay that cannot read them. Per-relation rotating mailbox tokens and sealed sender mean the relay cannot map who talks to whom. Optional built-in Tor VPN hides your IP.
+
+• <b>Email Aliases</b> — Real disposable addresses via a free addy.io account (API key only, stored encrypted), or a fully offline generator for your own domain.
+
+• <b>TX Privacy Check</b> — Paste a raw Bitcoin transaction and get a privacy score. Detects address reuse, peeling chains, change output leaks, round amounts, and mixed address types.
+
+• <b>Privacy Score</b> — 8 device-level checks: verified boot, SELinux, GrapheneOS detection, FBE, USB debugging, VPN status, DNS-over-TLS. Score history and sharing.
+
+• <b>Tor Routing</b> — One-tap system-wide Tor VPN: TCP and DNS over Tor, no DNS leaks. Also routes v01d Message traffic.
+
+• <b>Companion Apps</b> — Quick access to Monerujo (Monero), Auditor (hardware attestation), InterProfileSharing.
+
+<b>Privacy by design:</b>
+• No accounts, no tracking, no analytics
+• Wallet seeds and identity keys never leave the device (encrypted storage)
+• Messaging: sealed sender + rotating per-relation relay tokens
+• All analysis runs locally on your device
+• App lock with PIN + fingerprint, screenshot blocking, one-tap full data wipe
+• GPL-3.0, no proprietary dependencies

@@ -1,0 +1,19 @@
+name = "v01d-relay"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Create the KV namespace once with:
+#   npx wrangler kv namespace create MAILBOX
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "MAILBOX"
+id = "b54370c49cea41dc8818fecbf9f186ca"
+
+[vars]
+MESSAGE_TTL_SECONDS = "604800"   # 7 days
+MAX_MAILBOX_SIZE = "200"
+RATE_LIMIT_PER_MINUTE = "60"
+
+# Deploy:
+#   npx wrangler deploy
+# The relay URL will be https://void-message-relay.<your-subdomain>.workers.dev

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">v01d</string>
+
+    <!-- Shared -->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Lock / PIN setup -->
+    <string name="lock_too_many_attempts">Too many attempts. Wait 30 seconds.</string>
+    <string name="lock_wrong_pin">Wrong PIN. %1$d attempts left.</string>
+    <string name="lock_biometric_title">Unlock v01d</string>
+    <string name="lock_biometric_subtitle">Use fingerprint to unlock</string>
+    <string name="lock_biometric_use_pin">Use PIN</string>
+    <string name="lock_title">v01d is Locked</string>
+    <string name="pin_label">PIN</string>
+    <string name="lock_unlock">Unlock</string>
+    <string name="lock_use_fingerprint">Use Fingerprint</string>
+    <string name="setup_title">Set Up PIN</string>
+    <string name="setup_desc">Protect your wallet with a 4-6 digit PIN. If forgotten, recover with your seed phrase.</string>
+    <string name="setup_pin_label">PIN (4-6 digits)</string>
+    <string name="setup_confirm_label">Confirm PIN</string>
+    <string name="setup_pin_short">PIN must be at least 4 digits</string>
+    <string name="setup_pin_mismatch">PINs don\'t match</string>
+    <string name="setup_set_pin">Set PIN</string>
+    <string name="setup_skip">Skip (Not Recommended)</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="settings_electrum">Bitcoin server (advanced)</string>
+    <string name="settings_electrum_desc">Used to fetch balances and send. The default works fine — change it only if you run your own server.</string>
+    <string name="settings_host">Host</string>
+    <string name="settings_port">Port</string>
+    <string name="settings_network">Network</string>
+    <string name="network_mainnet">Mainnet</string>
+    <string name="network_testnet">Testnet</string>
+    <string name="settings_testnet_warning">⚠ Testnet coins have no value. Use for testing only.</string>
+    <string name="settings_network_confirm_title">Switch network?</string>
+    <string name="settings_network_confirm_mainnet">Switch to MAINNET? You will use real Bitcoin — transactions move real money.</string>
+    <string name="settings_network_confirm_testnet">Switch to TESTNET? Coins there are worthless and free — good for practicing.</string>
+    <string name="settings_network_confirm_yes">Switch</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_tx_alerts">Incoming TX Alerts</string>
+    <string name="settings_tx_alerts_desc">Poll Electrum every 30s for new incoming transactions</string>
+    <string name="settings_stored_locally">Settings are stored locally on this device.</string>
+    <string name="settings_danger_zone">Danger Zone</string>
+    <string name="settings_wipe_all">Wipe All Data</string>
+    <string name="settings_wipe_list">This will permanently delete:\n• BTC + XMR wallets (seeds)\n• Transaction history\n• Contacts\n• Privacy score history\n• App lock PIN\n• All settings</string>
+    <string name="settings_wipe_confirm_label">Type WIPE to confirm</string>
+    <string name="settings_wipe_everything">Wipe Everything</string>
+
+    <!-- BTC Wallet -->
+    <string name="wallet_title">BTC Wallet</string>
+    <string name="wallet_banner_mainnet">MAINNET — real Bitcoin. Double-check addresses.</string>
+    <string name="wallet_banner_testnet">TESTNET — fake coins for practice, worth nothing.</string>
+    <string name="wallet_generate_hint">Creates a new 12-word seed on this phone. Keys never leave the device.</string>
+    <string name="wallet_receive_hint">Share this address or QR to get paid. Safe to share — it cannot spend your funds.</string>
+    <string name="wallet_share">Share</string>
+    <string name="wallet_share_address">Share BTC address</string>
+    <string name="wallet_advanced">Advanced</string>
+    <string name="wallet_desc">Generate an offline Bitcoin wallet. Keys never leave this device. BIP-39 seed, native SegWit (bc1q) addresses.</string>
+    <string name="wallet_error">Error: %1$s</string>
+    <string name="wallet_generate">Generate New Wallet</string>
+    <string name="wallet_import_btn">Import Existing Wallet</string>
+    <string name="wallet_seed_label">Seed Phrase (12 words)</string>
+    <string name="wallet_seed_placeholder">word1 word2 word3 …</string>
+    <string name="wallet_need_12">Seed must be exactly 12 words</string>
+    <string name="wallet_imported">Wallet imported</string>
+    <string name="wallet_invalid_seed">Invalid seed: %1$s</string>
+    <string name="wallet_import">Import</string>
+    <string name="wallet_balance">Balance</string>
+    <string name="wallet_loading">Loading…</string>
+    <string name="wallet_amount_btc">%1$s BTC</string>
+    <string name="wallet_sats">%1$d sats</string>
+    <string name="wallet_offline">Offline — cannot fetch balance</string>
+    <string name="wallet_receive_address">Receive Address</string>
+    <string name="wallet_address_copied">Address copied</string>
+    <string name="wallet_copy_address">Copy Address</string>
+    <string name="wallet_recovery_seed">Recovery Seed</string>
+    <string name="wallet_show_seed">Show Seed Phrase</string>
+    <string name="wallet_seed_warning">⚠ Write it down on paper. Never store it digitally.</string>
+    <string name="wallet_verify_words">Verify: type words #%1$s</string>
+    <string name="wallet_verify_placeholder">word1 word2 word3</string>
+    <string name="wallet_seed_copied">Seed copied — clear clipboard after!</string>
+    <string name="wallet_copy_seed">Copy Seed</string>
+    <string name="wallet_verify_to_copy">Verify to enable copy</string>
+    <string name="wallet_delete_generate">Delete Wallet &amp; Generate New</string>
+    <string name="wallet_psbt_btn">PSBT Signer</string>
+    <string name="wallet_send_btn">Send BTC</string>
+    <string name="wallet_history_btn">Transaction History</string>
+    <string name="wallet_export_chooser">Export Wallet (xpub only — no private keys)</string>
+    <string name="wallet_export_failed">Export failed: %1$s</string>
+    <string name="wallet_export_btn">Export Wallet (xpub)</string>
+
+    <string name="send_fee_title">Fee</string>
+    <string name="send_fee_slow">Slow</string>
+    <string name="send_fee_normal">Normal</string>
+    <string name="send_fee_fast">Fast</string>
+    <string name="send_fee_manual">Enter fee manually</string>
+
+    <!-- Send -->
+    <string name="send_title">Send BTC</string>
+    <string name="send_satoshis">%1$d satoshis</string>
+    <string name="send_failed_balance">Failed to fetch balance: %1$s</string>
+    <string name="send_recipient_label">Recipient Address</string>
+    <string name="send_scan_prompt">Scan a Bitcoin address or BIP-21 QR code</string>
+    <string name="send_scan_btn">Scan QR Code</string>
+    <string name="send_pick_contact">Pick from Contacts</string>
+    <string name="send_amount_label">Amount (BTC)</string>
+    <string name="send_fee_label">Fee (sat/vB)</string>
+    <string name="send_no_wallet">No wallet found</string>
+    <string name="send_invalid_amount">Invalid amount</string>
+    <string name="send_enter_recipient">Enter a recipient address</string>
+    <string name="send_amount_positive">Amount must be positive</string>
+    <string name="send_failed_tx">Transaction failed</string>
+    <string name="send_btn">Send</string>
+    <string name="send_broadcast">Transaction Broadcast!</string>
+    <string name="send_txid">TXID: %1$s</string>
+    <string name="send_txid_copied">TXID copied</string>
+    <string name="send_copy_txid">Copy TXID</string>
+    <string name="send_privacy_note">Transactions are broadcast via a public Electrum server. The server sees your addresses. For maximum privacy, use your own server or Tor.</string>
+    <string name="send_no_funds">No funds available</string>
+    <string name="send_insufficient">Insufficient funds</string>
+
+    <!-- Transaction history -->
+    <string name="history_title">Transaction History</string>
+    <string name="history_detail">Transaction Detail</string>
+    <string name="history_txid">TXID</string>
+    <string name="history_amount">Amount</string>
+    <string name="history_direction">Direction</string>
+    <string name="history_incoming">Incoming</string>
+    <string name="history_outgoing">Outgoing</string>
+    <string name="history_address">Address</string>
+    <string name="history_confirmations">Confirmations</string>
+    <string name="history_date">Date</string>
+    <string name="history_back_list">Back to list</string>
+    <string name="history_empty">No transactions found.\nSend or receive BTC to see history here.</string>
+    <string name="history_conf_short">%1$d conf</string>
+
+    <!-- PSBT signer -->
+    <string name="psbt_title">PSBT Signer</string>
+    <string name="psbt_desc">Paste a PSBT (base64 or hex) to inspect and sign with your wallet keys. Create PSBTs in Sparrow, Electrum, or BlueWallet.</string>
+    <string name="psbt_input_label">PSBT (base64 or hex)</string>
+    <string name="psbt_parse_failed">Failed to parse PSBT</string>
+    <string name="psbt_parse_btn">Parse PSBT</string>
+    <string name="psbt_unsigned">Unsigned Transaction</string>
+    <string name="psbt_txid">TXID: %1$s</string>
+    <string name="psbt_inputs">Inputs: %1$d</string>
+    <string name="psbt_outputs">Outputs: %1$d</string>
+    <string name="psbt_witness">Has witness UTXOs: %1$s</string>
+    <string name="psbt_yes">Yes</string>
+    <string name="psbt_no">No</string>
+    <string name="psbt_bip32">BIP32 paths: %1$d derivation(s)</string>
+    <string name="psbt_outputs_header">Outputs:</string>
+    <string name="psbt_output_line">#%1$d → %2$s (%3$s BTC)</string>
+    <string name="psbt_unknown">unknown</string>
+    <string name="psbt_nonstandard">non-standard</string>
+    <string name="psbt_sign_failed">Signing failed: %1$s</string>
+    <string name="psbt_sign_btn">Sign with Wallet</string>
+    <string name="psbt_signed">Signed Transaction</string>
+    <string name="psbt_signed_count">Signed %1$d/%2$d inputs</string>
+    <string name="psbt_hex_copied">Signed tx hex copied</string>
+    <string name="psbt_copy_hex">Copy Signed TX Hex</string>
+
+    <!-- TX privacy check -->
+    <string name="txcheck_title">TX Privacy Check</string>
+    <string name="txcheck_description">Paste a raw transaction hex for full offline analysis. Txid or address also accepted (limited analysis).</string>
+    <string name="txcheck_input_label">Raw TX Hex, Txid, or Address</string>
+    <string name="txcheck_input_placeholder">0200000001... or 64-char txid or bc1...</string>
+    <string name="txcheck_analyze">Analyze</string>
+    <string name="txcheck_transaction">Transaction</string>
+    <string name="txcheck_txid">TXID: %1$s…</string>
+    <string name="txcheck_inputs_outputs">"Inputs: %1$d  |  Outputs: %2$d"</string>
+    <string name="txcheck_total_output">Total output: %1$s BTC</string>
+    <string name="txcheck_score_of">/ 100 privacy score</string>
+
+    <!-- Privacy score -->
+    <string name="score_title">Privacy Score</string>
+    <string name="score_check_verified_boot">Verified Boot</string>
+    <string name="score_verified_boot_state">State: %1$s</string>
+    <string name="score_verified_boot_unknown">Cannot read on this device</string>
+    <string name="score_check_graphene">GrapheneOS Detected</string>
+    <string name="score_graphene_yes">Running GrapheneOS</string>
+    <string name="score_graphene_no">Standard Android — some checks unavailable</string>
+    <string name="score_check_selinux">SELinux Enforcing</string>
+    <string name="score_selinux_status">Status: %1$s</string>
+    <string name="score_check_encryption">File-Based Encryption</string>
+    <string name="score_encryption_detail">Android %1$s (API %2$d)</string>
+    <string name="score_check_screen_lock">Screen Lock Set</string>
+    <string name="score_screen_lock_detail">Verify manually: Settings → Security → Screen lock</string>
+    <string name="score_check_usb_debugging">USB Debugging Off</string>
+    <string name="score_usb_on">USB debugging is ON — disable when not needed</string>
+    <string name="score_usb_off">USB debugging is off</string>
+    <string name="score_check_vpn">VPN Active</string>
+    <string name="score_vpn_on">VPN connection detected</string>
+    <string name="score_vpn_off">No VPN — traffic visible to ISP</string>
+    <string name="score_check_private_dns">Private DNS (DoT)</string>
+    <string name="score_dns_strict">Strict DNS-over-TLS configured</string>
+    <string name="score_dns_opportunistic">Opportunistic DNS-over-TLS</string>
+    <string name="score_dns_off">Private DNS off — DNS queries may be snooped</string>
+    <string name="score_posture_strong">Strong privacy posture</string>
+    <string name="score_posture_moderate">Moderate — review flagged items</string>
+    <string name="score_posture_weak">Weak — action needed</string>
+    <string name="score_device_checks">Device Checks</string>
+    <string name="score_all_local">All checks run locally on your device. No data is sent anywhere.</string>
+    <string name="score_share_summary">"v01d Privacy Score: %1$d/100\n"</string>
+    <string name="score_share_score">Share Score</string>
+    <string name="score_history">History</string>
+    <string name="score_history_entry">%1$s — %2$d/100</string>
+
+    <!-- Email aliases -->
+    <string name="alias_title">Email Aliases</string>
+    <string name="alias_description">Generate deterministic email aliases. Same key + site = same alias, every time. Fully offline.</string>
+    <string name="alias_secret_key">Secret Key</string>
+    <string name="alias_secret_key_hint">Your master secret</string>
+    <string name="alias_site_name">Site / Service Name</string>
+    <string name="alias_site_name_hint">e.g. netflix, amazon</string>
+    <string name="alias_domain">Alias Domain</string>
+    <string name="alias_generate">Generate Alias</string>
+    <string name="alias_your_alias">Your alias:</string>
+    <string name="alias_clipboard_label">Email Alias</string>
+    <string name="alias_copied">Copied to clipboard</string>
+    <string name="alias_copy">Copy</string>
+    <string name="alias_addy_setup_title">Real email aliases with addy.io (free)</string>
+    <string name="alias_addy_setup_desc">addy.io creates real aliases that forward to your real mailbox: sites never learn your real email, and you can switch any alias off. One-time setup: 1) create a free account, 2) in addy.io go to Settings → API and generate a key, 3) paste it below.</string>
+    <string name="alias_addy_create_account">Create a free account on addy.io</string>
+    <string name="alias_addy_api_key">addy.io API key</string>
+    <string name="alias_addy_api_key_hint">paste your key</string>
+    <string name="alias_addy_connect">Connect account</string>
+    <string name="alias_addy_connect_failed">Connection failed: %1$s</string>
+    <string name="alias_addy_connected">Connected</string>
+    <string name="alias_addy_disconnect">Disconnect</string>
+    <string name="alias_addy_create">Create Alias</string>
+    <string name="alias_addy_recent">Recent aliases — tap to copy, switch off to stop forwarding</string>
+    <string name="alias_manual_mode">Manual generator / own domain (advanced)</string>
+    <string name="alias_manual_how_title">How this works</string>
+    <string name="alias_manual_how_steps">This generates an address — it does not receive email by itself. To make it work: 1) own a domain (≈ €10/year), 2) enable catch-all forwarding on it (free with Cloudflare Email Routing), 3) enter that domain below. Mail sent to any generated address lands in your real mailbox.</string>
+
+    <!-- Companion apps -->
+    <string name="companion_title">Companion Apps</string>
+    <string name="companion_description">These privacy apps work best alongside v01d. Tap to open if installed, or install from F-Droid / GitHub.</string>
+    <string name="companion_installed">Installed</string>
+    <string name="companion_install">Install</string>
+
+    <!-- XMR wallet -->
+    <string name="xmr_title">Monero Wallet</string>
+    <string name="xmr_welcome">An offline Monero wallet. Your seed stays on this phone and works with any Monero app.</string>
+    <string name="xmr_check_node">Check node</string>
+    <string name="xmr_node_connected">Connected (%1$s, height %2$d)</string>
+    <string name="xmr_node_failed">Failed: %1$s</string>
+    <string name="xmr_status_connected">Connected</string>
+    <string name="xmr_import_description">Import a Monero seed to generate your address. Address generation runs entirely on-device (pure Kotlin crypto). Balance and history require a monero-wallet-rpc node.</string>
+    <string name="xmr_import_seed">Import Monero Seed</string>
+    <string name="xmr_25_word_seed">25-word Seed</string>
+    <string name="xmr_hex_seed">Hex Seed</string>
+    <string name="xmr_25_word_seed_phrase">25-word Monero Seed Phrase</string>
+    <string name="xmr_64_char_hex_seed">64-char Hex Seed</string>
+    <string name="xmr_hex_seed_length">Hex seed must be 64 characters</string>
+    <string name="xmr_seed_25_words">Seed must be exactly 25 words (got %1$d)</string>
+    <string name="xmr_wallet_imported">Wallet imported — address generated</string>
+    <string name="xmr_error">Error: %1$s</string>
+    <string name="xmr_import_generate">Import &amp; Generate Address</string>
+    <string name="xmr_your_address">Your Monero Address</string>
+    <string name="xmr_address_copied">Address copied</string>
+    <string name="xmr_copy">Copy</string>
+    <string name="xmr_monerujo_missing">Monerujo not installed. Install it from F-Droid for sending.</string>
+    <string name="xmr_send_monerujo">Send via Monerujo</string>
+    <string name="xmr_node">Node</string>
+    <string name="xmr_checking_node">Checking node...</string>
+    <string name="xmr_balance_title">Balance</string>
+    <string name="xmr_configure_rpc_first">Configure wallet RPC URL first</string>
+    <string name="xmr_unknown_error">Unknown error</string>
+    <string name="xmr_refresh">Refresh</string>
+    <string name="xmr_create_wallet">Create New Wallet</string>
+    <string name="xmr_create_hint">Generates a new 25-word seed on this phone. Write it on paper — it is the only way to recover your funds.</string>
+    <string name="xmr_wallet_created">Wallet created — write down your 25 words now!</string>
+    <string name="xmr_receive">Receive Monero</string>
+    <string name="xmr_receive_hint">Share this address to get paid. It is safe to share — it cannot be used to spend your funds.</string>
+    <string name="xmr_share">Share</string>
+    <string name="xmr_balance_via_monerujo">Balance &amp; sending</string>
+    <string name="xmr_monerujo_hint">For balance, history and sending, v01d hands off to Monerujo, a dedicated Monero app. Your same 25-word seed works there.</string>
+    <string name="xmr_install_monerujo">Install Monerujo</string>
+    <string name="xmr_advanced">Advanced</string>
+    <string name="xmr_refresh_balance">Fetch balance (wallet RPC)</string>
+    <string name="xmr_loading">Loading...</string>
+    <string name="xmr_amount_xmr">%1$s XMR</string>
+    <string name="xmr_unlocked">Unlocked: %1$s XMR</string>
+    <string name="xmr_connect_rpc">Connect to a monero-wallet-rpc instance to view balance and history.</string>
+    <string name="xmr_transactions">Transactions</string>
+    <string name="xmr_received">↓ Received</string>
+    <string name="xmr_sent">↑ Sent</string>
+    <string name="xmr_tx_meta">Block %1$d · %2$d conf</string>
+    <string name="xmr_hide_node_config">Hide Node Config</string>
+    <string name="xmr_configure_nodes">Configure Nodes</string>
+    <string name="xmr_daemon_url">Daemon RPC URL</string>
+    <string name="xmr_wallet_rpc_url">Wallet RPC URL (optional)</string>
+    <string name="xmr_node_config_saved">Node config saved</string>
+    <string name="xmr_save_node_config">Save Node Config</string>
+    <string name="xmr_hide_seed">Hide Seed</string>
+    <string name="xmr_show_seed_backup">Show Seed Backup</string>
+    <string name="xmr_seed_warning">⚠ Never share your seed. Anyone with it can steal your funds.</string>
+    <string name="xmr_wallet_deleted">Wallet deleted</string>
+    <string name="xmr_delete_wallet">Delete Wallet</string>
+
+    <!-- Tor screen -->
+    <string name="tor_title">Tor Routing</string>
+    <string name="tor_circuit">Tor Circuit</string>
+    <string name="tor_vpn_system_wide">Tor VPN (system-wide)</string>
+    <string name="tor_vpn_active">Routing all traffic through Tor</string>
+    <string name="tor_vpn_inactive">Route all device traffic through Tor</string>
+    <string name="tor_vpn_udp_note">TCP + DNS routed through Tor. Non-DNS UDP not supported.</string>
+    <string name="tor_running">Tor is running</string>
+    <string name="tor_running_description">Traffic from apps that use the Tor SOCKS proxy (port 9050) is routed through the Tor network. For system-wide routing, enable the Tor VPN toggle below.</string>
+    <string name="tor_stopped">Tor is stopped</string>
+    <string name="tor_stopped_description">Toggle the switch above to start the Tor service. The Tor binary runs as a foreground service on your device.</string>
+    <string name="tor_how_it_works">How it works</string>
+    <string name="tor_how_it_works_description">Tor routes your traffic through 3 encrypted relays, hiding your IP from destination servers. The Tor binary (libtor.so) runs entirely on your device via the Guardian Project\'s tor-android library.\n\nSOCKS proxy: 127.0.0.1:9050\nHTTP proxy: 127.0.0.1:8118\nDNS: resolved through Tor (no DNS leaks)</string>
+    <string name="tor_powered_by">Powered by Guardian Project\'s tor-android. Tor is free software — learn more at torproject.org.</string>
+
+    <!-- Tor VPN notification -->
+    <string name="torvpn_notification_title">v01d Tor VPN</string>
+    <string name="torvpn_notification_text">Routing traffic through Tor (bidirectional)</string>
+    <string name="torvpn_channel_name">Tor VPN</string>
+    <string name="torvpn_channel_description">Tor VPN routing status</string>
+    <string name="torvpn_stop">Stop</string>
+
+    <!-- TX notifications -->
+    <string name="txnotif_title">Incoming Transaction</string>
+    <string name="txnotif_received">Received %1$s BTC</string>
+    <string name="txnotif_big_text">Received %1$s BTC\nTXID: %2$s</string>
+    <string name="txnotif_channel_name">Incoming Transactions</string>
+    <string name="txnotif_channel_description">Notifications for incoming BTC transactions</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_version">Privacy Toolbox v%1$s</string>
+    <string name="about_description">A free, open-source privacy toolbox designed for GrapheneOS. All wallet operations work offline, all analysis runs locally. No accounts, no tracking, no analytics.</string>
+    <string name="about_links">Links</string>
+    <string name="about_link_source">Source Code (GitHub)</string>
+    <string name="about_link_license">License: GPL 3.0</string>
+    <string name="about_link_tor">Tor Project</string>
+    <string name="about_link_grapheneos">GrapheneOS</string>
+    <string name="about_link_guardian">Guardian Project (Tor)</string>
+    <string name="about_built_with">Built With</string>
+    <string name="about_built_bitcoinj">• bitcoinj 0.16.3 — Bitcoin wallet</string>
+    <string name="about_built_zxing">• ZXing — QR codes</string>
+    <string name="about_built_tor_android">• tor-android 0.4.8.21 — Tor service</string>
+    <string name="about_built_sqlcipher">• SQLCipher 4.6.1 — Encrypted databases</string>
+    <string name="about_built_room">• Room 2.6.1 — Local storage</string>
+    <string name="about_built_security_crypto">• AndroidX Security Crypto — Encrypted storage</string>
+    <string name="about_built_biometric">• AndroidX Biometric — App lock</string>
+    <string name="about_built_compose">• Jetpack Compose + Material 3 — UI</string>
+
+    <!-- Dashboard -->
+    <string name="dash_subtitle">Privacy Toolbox</string>
+    <string name="dash_section_basics">Start here</string>
+    <string name="dash_section_advanced">Advanced tools</string>
+    <string name="dash_help">Help</string>
+    <string name="dash_help_desc">Plain-language guide to every tool</string>
+    <string name="help_title">Help</string>
+    <string name="dash_btc_wallet">BTC Wallet</string>
+    <string name="dash_btc_wallet_desc">Your Bitcoin wallet — receive, send, backup</string>
+    <string name="dash_xmr_wallet">XMR Wallet</string>
+    <string name="dash_xmr_wallet_desc">Monero wallet — receive and keep your seed safe</string>
+    <string name="dash_secure_message">Secure Message</string>
+    <string name="dash_secure_message_desc">Chat that nobody else can read</string>
+    <string name="dash_email_aliases">Email Aliases</string>
+    <string name="dash_email_aliases_desc">Email alternatives that hide your real address</string>
+    <string name="dash_tx_check">TX Privacy Check</string>
+    <string name="dash_tx_check_desc">Expert: check a Bitcoin payment for privacy leaks</string>
+    <string name="dash_privacy_score">Privacy Score</string>
+    <string name="dash_privacy_score_desc">How private is this phone? Find out and improve</string>
+    <string name="dash_tor_routing">Tor Routing</string>
+    <string name="dash_tor_routing_desc">Hide your internet traffic (like a VPN, but anonymous)</string>
+    <string name="dash_companion_apps">Companion Apps</string>
+    <string name="dash_companion_apps_desc">Monerujo, Auditor, Profile Sharing</string>
+    <string name="dash_settings">Settings</string>
+    <string name="dash_settings_desc">Theme, server, aliases</string>
+    <string name="dash_about">About</string>
+    <string name="dash_about_desc">Version, license, links</string>
+    <string name="dash_address_book">Address Book</string>
+    <string name="dash_address_book_desc">Saved recipients</string>
+
+    <!-- Shared components -->
+    <string name="comp_qr_code_desc">QR code: %1$s</string>
+
+    <!-- Messaging -->
+    <string name="msg_title">v01d Message</string>
+    <string name="msg_bundle_published">Bundle published to relay</string>
+    <string name="msg_publish_failed">Publish failed (check relay URL)</string>
+    <string name="msg_republish_bundle">Republish bundle</string>
+    <string name="msg_add_contact_cd">Add contact</string>
+    <string name="msg_setup_title">Set Up Messaging</string>
+    <string name="msg_setup_description">End-to-end encrypted messaging via the Signal Protocol (PQXDH + Double Ratchet). Messages route through a blind relay that never sees plaintext. Enable the Tor VPN to hide your IP from the relay.</string>
+    <string name="msg_display_name">Display name</string>
+    <string name="msg_ip_warning">Your internet address (IP) is visible to the relay while Tor is off. Turn on Tor Routing from the dashboard to hide it.</string>
+    <string name="msg_relay_choice">Where should messages queue up?</string>
+    <string name="msg_relay_public">Public relay (recommended)</string>
+    <string name="msg_relay_public_desc">Works immediately. Encrypted messages wait here until your contact opens the app — nobody can read them.</string>
+    <string name="msg_relay_custom">My own relay (advanced)</string>
+    <string name="msg_relay_custom_desc">Self-host your own queue on Cloudflare Workers (see the project\'s DEPLOY.md).</string>
+    <string name="msg_relay_url">Custom relay URL</string>
+    <string name="msg_enter_relay_url">Enter a relay URL</string>
+    <string name="msg_default_user">v01d User</string>
+    <string name="msg_identity_created">Identity created + bundle published</string>
+    <string name="msg_identity_publish_failed">Identity created, but bundle publish failed</string>
+    <string name="msg_create_identity">Create Identity &amp; Start</string>
+    <string name="msg_tap_for_identity">Tap for your QR / fingerprint</string>
+    <string name="msg_contacts">Contacts</string>
+    <string name="msg_no_contacts">No contacts yet. Tap + and scan a friend\'s QR code.</string>
+    <string name="msg_no_messages">No messages yet</string>
+    <string name="chat_default_file_name">file</string>
+    <string name="chat_send_failed">Send failed</string>
+    <string name="chat_cant_read_file">Can\'t read file: %1$s</string>
+    <string name="chat_unknown_contact">Unknown</string>
+    <string name="chat_attach_file">Attach file</string>
+    <string name="chat_message_hint">Message</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_no_messages">No messages yet.\nSend the first one — it establishes the encrypted session.</string>
+    <string name="chat_tap_to_open">Tap to open / share</string>
+    <string name="chat_share_file">Share file</string>
+    <string name="chat_cant_open_file">Can\'t open file: %1$s</string>
+    <string name="addcontact_invalid_qr">Not a valid v01d Message QR</string>
+    <string name="addcontact_title">Add Contact</string>
+    <string name="addcontact_scan_qr">Scan a contact\'s QR</string>
+    <string name="addcontact_scan_prompt">Scan v01d Message contact QR</string>
+    <string name="addcontact_scan_button">Scan QR Code</string>
+    <string name="addcontact_contact_name">Contact name</string>
+    <string name="addcontact_unknown">Unknown</string>
+    <string name="addcontact_added">Added %1$s</string>
+    <string name="addcontact_save">Save Contact</string>
+    <string name="addcontact_your_qr">Your contact QR</string>
+    <string name="addcontact_fingerprint_label">Safety words</string>
+    <string name="addcontact_fingerprint_hint">Read these 6 words aloud with your contact — if they match, nobody is in the middle.</string>
+
+    <!-- Help guide -->
+    <string-array name="help_titles">
+        <item>Start here</item>
+        <item>Bitcoin wallet</item>
+        <item>Sending Bitcoin</item>
+        <item>Monero (XMR)</item>
+        <item>Secure Message</item>
+        <item>Email aliases</item>
+        <item>Privacy Score</item>
+        <item>Tor Routing</item>
+        <item>PIN, lock and wipe</item>
+        <item>Golden rules</item>
+    </string-array>
+    <string-array name="help_bodies">
+        <item>1) Open BTC Wallet and tap Create — write the 12 words on paper. 2) Show the QR code to receive money. 3) Try Secure Message with a friend: one shows the QR, the other scans it, then chat.</item>
+        <item>The wallet lives on your phone — keys never leave it. The 12 words ARE your money: whoever has them can spend it. Write them on paper, never photograph them, and verify you wrote them correctly before sending money in.</item>
+        <item>Paste the address or scan the QR of who pays you, enter the amount, pick a fee (Slow = cheaper, Fast = quicker), check the summary, confirm. The fee goes to the Bitcoin network, not to v01d.</item>
+        <item>Create or import a 25-word seed, then show the address to receive Monero. For balance and sending, v01d hands off to Monerujo, a dedicated Monero app — your same seed works there.</item>
+        <item>Messages are end-to-end encrypted: only you and your contact can read them, not even the relay server can. Setup: pick a display name, choose the public relay, done. Add contacts by scanning each other\'s QR in person.</item>
+        <item>An alias is an alternative email that forwards to your real mailbox — sites never learn your real address. Connect a free addy.io account, type the site name, tap Create. Turn an alias off when it starts receiving spam.</item>
+        <item>A quick health check of your phone\'s privacy: verified system, screen lock, VPN, DNS and more. Follow the suggestions to raise your score. Checked data stays on the phone.</item>
+        <item>Tor bounces your traffic through volunteer relays so websites cannot see your IP. Flip the VPN switch, accept Android\'s prompt, and wait for it to connect. It is slower than normal — that is the price of anonymity.</item>
+        <item>The PIN (or fingerprint) locks the app, not your money — seeds always work even without it. Wipe All Data in Settings deletes wallets, chats and settings permanently: use it before giving the phone away.</item>
+        <item>Seeds on paper, never digital. Verify contacts in person. A fresh address per payment is more private. Practice on Testnet first. If an offer sounds too good, it is a scam — v01d will never ask for your seed.</item>
+    </string-array>
+    <string name="contacts_pick_title">Pick Contact</string>
+    <string name="contacts_title">Address Book</string>
+    <string name="contacts_add_contact_cd">Add Contact</string>
+    <string name="contacts_new_contact">New Contact</string>
+    <string name="contacts_name_label">Name</string>
+    <string name="contacts_address_label">BTC Address</string>
+    <string name="contacts_note_label">Note (optional)</string>
+    <string name="contacts_save">Save</string>
+    <string name="contacts_empty">No contacts yet.\nTap + to save a frequently used address.</string>
+    <string name="contacts_address_copied">%1$s: address copied</string>
+    <string name="contacts_delete">Delete</string>
+</resources>
