@@ -73,7 +73,7 @@ fun AboutScreen(onBack: () -> Unit) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text(stringResource(R.string.about_links), style = MaterialTheme.typography.titleMedium)
                     Spacer(modifier = Modifier.height(8.dp))
-                    LinkRow(stringResource(R.string.about_link_source)) { openUrl("https://github.com/voidprivacy/void-android") }
+                    LinkRow(stringResource(R.string.about_link_source)) { openUrl("https://github.com/v01dPrivacy/v01d-android") }
                     LinkRow(stringResource(R.string.about_link_license)) { openUrl("https://www.gnu.org/licenses/gpl-3.0.html") }
                     LinkRow(stringResource(R.string.about_link_tor)) { openUrl("https://torproject.org") }
                     LinkRow(stringResource(R.string.about_link_grapheneos)) { openUrl("https://grapheneos.org") }
